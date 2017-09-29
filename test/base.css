@@ -1,0 +1,265 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+	margin:0;
+	padding:0;
+}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{
+	display:block;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+caption,th{
+	text-align:left;
+	font-weight:normal;
+}
+html,body,fieldset,img,iframe,abbr{
+	border:0;
+}
+i,cite,em,var,address,dfn{
+	font-style:normal;
+}
+[hidefocus],summary{
+	outline:0;
+}
+li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,small{
+	font-size:100%;
+}
+sup,sub{
+	font-size:83%;
+}
+pre,code,kbd,samp{
+	font-family:inherit;
+}
+textarea{
+	overflow:auto;
+	resize:none;
+}
+label,summary{
+	cursor:default;
+}
+a,button{
+	cursor:pointer;
+}
+h1,h2,h3,h4,h5,h6,em,strong,b{
+	font-weight:bold;
+}
+del,ins,u,s,a,a:hover{
+	text-decoration:none;
+}
+body,textarea,input,button,select,keygen,legend{
+	font:12px/1.14 arial,\5b8b\4f53;
+	color:#666;
+	outline:0;
+}
+body{
+	background:#fff;
+}
+a,a:hover{
+	color:#666;
+}
+.u-icon{
+	display:inline-block;
+	vertical-align:middle;
+}
+.u-icon-btn{
+	background-color:#fff;
+	border:0 none;
+}
+.u-search{
+	border:2px solid #90decf;
+	border-radius:3px;
+	width:193px;
+	height:36px;
+}
+.u-search >input{
+	border:0 none;
+	padding:0 15px;
+	height:36px;
+}
+.u-btn{
+	display:inline-block;
+	width:90px;
+	text-align:center;
+	height:38px;
+	line-height:38px;
+	text-decoration:none;
+	border-radius:3px;
+	border:1px solid #5ed0ba;
+}
+.u-btn .u-icon{
+	margin-right:7px;
+}
+.u-btn:disabled{
+	background-color:#ccc;
+	border-color:#ccc;
+}
+.u-btn-sm{
+	width:60px;
+	height:25px;
+	line-height:25px;
+}
+.u-btn-primary{
+	color:#fff;
+	background-color:#5ed0ba;
+}
+.u-btn-primary:hover{
+	color:#fff;
+}
+.u-btn-default{
+	color:#5ed0ba;
+	background-color:#fff;
+}
+.u-btn-link{
+	color:#5ed0ba;
+	background-color:#fff;
+	border:1px solid #fff;
+}
+.u-btn-link:hover{
+	color:#5ed0ba;
+}
+.u-btn-icon >.u-icon{
+	margin-right:9px;
+}
+.u-btn.z-follow{
+	position:relative;
+}
+.u-btn.z-follow:hover:after{
+	content:"取消关注";
+	color:#fff;
+	background:#5ed0ba;
+	position:absolute;
+	left:0;
+	right:0;
+}
+.u-ipt{
+	border:1px solid #90decf;
+	padding:0 15px;
+	height:37px;
+	line-height:37px;
+	border-radius:3px;
+}
+.u-error .u-icon{
+	margin-right:8px;
+}
+.u-formitem{
+	*zoom:1;
+	margin:10px 0;
+	height:39px;
+	line-height:39px;
+	display:flex;
+}
+.u-formitem:before,.u-formitem:after{
+	display:table;
+	content:"";
+	line-height:0;
+}
+.u-formitem:after{
+	clear:both;
+}
+.u-formitem .formitem_tt{
+	width:60px;
+}
+.u-formitem .u-ipt.z-error{
+	border-color:#f49c94;
+}
+.u-formitem .formitem_ct{
+	flex:1;
+	display:block;
+}
+.u-formitem .formitem_ct-validate .u-ipt{
+	width:138px;
+	border-radius:3px 0 0 3px;
+}
+.u-formitem .formitem_ct-validate img{
+	width:94px;
+	border-radius:0 3px 3px 0;
+	border:1px solid #5ed0ba;
+	height:37px;
+	vertical-align:middle;
+	border-left:0 none;
+	cursor:pointer;
+}
+.u-formitem .formitem_ct-two >div{
+	display:inline-block;
+	width:50%;
+	text-align:center;
+}
+.u-formitem-1 .formitem_tt{
+	position:absolute;
+	flex:0;
+}
+.u-formitem-2{
+	display:block;
+}
+.u-link{
+	color:#5ed0ba;
+}
+.u-work{
+	text-align:center;
+	margin-top:12px;
+}
+.u-work >div{
+	margin-top:12px;
+}
+.u-checkbox input[type="checkbox"]{
+	display:none;
+}
+.u-checkbox .u-icon-checkboxchecked{
+	display:none;
+}
+.u-checkbox input[type="checkbox"]:checked~.u-icon-checkboxchecked{
+	display:inline-block;
+}
+.u-checkbox input[type="checkbox"]:checked~.u-icon-checkbox{
+	display:none;
+}
+.u-checkbox-remeber >span{
+	margin-left:5px;
+}
+.u-checkbox-agreement >span{
+	margin-left:5px;
+	color:#2ea7e0;
+}
+.u-radio input[type="radio"]{
+	display:none;
+}
+.u-radio .u-icon-radiochecked{
+	display:none;
+}
+.u-radio input[type="radio"]:checked~.u-icon-radiochecked{
+	display:inline-block;
+}
+.u-radio input[type="radio"]:checked~.u-icon-radio{
+	display:none;
+}
+.u-radio-sex span{
+	margin-left:15px;
+}
+.f-cb:after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+.f-dn{
+	display:none;
+}
+.f-fr{
+	float:right;
+}
+.loading{
+	background:url("/res/images/loading.gif") no-repeat;
+	width:32px;
+	height:32px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.a-fade{
+	transition:opacity 1s ease-in;
+}

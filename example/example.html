@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pinyin example</title>
+  <style>
+    #example {
+      width: 500px;
+      margin: 40px auto;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<div id="example">
+  <input id="input" placeholder="请输入中文">
+  <div id="result"></div>
+</div>
+<script src="../pinyin.js"></script>
+<script>
+  function inputHandler(evt) {
+    let hanzis = evt.target.value
+    let pinyins = hanzis.split('').map(hz => {
+      return pinyin(hz)
+    })
+    document.getElementById('result').innerHTML = pinyins.join(' ')
+  }
+
+  document.getElementById('input').addEventListener('input', inputHandler)
+</script>
+</body>
+</html>
