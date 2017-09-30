@@ -663,16 +663,17 @@
   }
   // 比较器
   var COLLATOR = new Intl.Collator(['zh-CN'])
-  // 首个拼音汉字
-  var FIRST_PINYIN_UNICODE_HANZI = '\u963F'
-  // 最后一个拼音汉字
-  var LAST_PINYIN_UNICODE_HANZI = '\u9FFF'
+  var firstHanziCharCode = 19968 //0x4e00
+  var lastHanziCharCode = 40869 //0x9FA5
 
   exports.pinyin = function (target) {
-    if (typeof target !== 'string' // 非字符
-      || target.charCodeAt(0) < 256 // 拉丁字符及其他字符
-      || COLLATOR.compare(target, FIRST_PINYIN_UNICODE_HANZI) === -1
-      || COLLATOR.compare(target, LAST_PINYIN_UNICODE_HANZI) === 1) {
+    // 非字符
+    if (typeof target !== 'string') {
+      return target
+    }
+    var charCode = target.charCodeAt(0)
+    // 不在比对范围内
+    if (charCode < firstHanziCharCode || charCode > lastHanziCharCode) {
       return target
     }
     // 命中缓存，是修正的汉字，或者是之前已经查找过这个汉字
@@ -682,11 +683,12 @@
     var start = 0
     var end = hanzis.length - 1
     var index = -1
+    var hanzi
     var compareResult
     // 二分查找
     while (start <= end) {
       index = parseInt((start + end) / 2)
-      var hanzi = hanzis[index]
+      hanzi = hanzis[index]
       compareResult = COLLATOR.compare(target, hanzi)
       if (compareResult === 1) {
         start = index + 1
