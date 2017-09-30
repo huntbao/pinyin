@@ -688,12 +688,12 @@
       index = parseInt((start + end) / 2)
       var hanzi = hanzis[index]
       compareResult = COLLATOR.compare(target, hanzi)
-      if (compareResult === 0) {
-        break
-      } else if (compareResult > 0) {
+      if (compareResult === 1) {
         start = index + 1
-      } else {
+      } else if (compareResult === -1) {
         end = index - 1
+      } else {
+        break
       }
     }
     if (compareResult < 0) {
