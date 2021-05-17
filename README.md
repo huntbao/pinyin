@@ -1,7 +1,7 @@
 ## 使用
 
 ```js
-import pinyin from 'simple-pinyin';
+import pinyin from 'easy-pinyin';
 
 const str = '拼音';
 console.log(pinyin(str)); // pin'yin

@@ -1,5 +1,5 @@
 {
-  "name": "simple-pinyin",
+  "name": "easy-pinyin",
   "version": "1.0.0",
   "description": "汉字转拼音，浏览器端实现",
   "main": "pinyin.js",
