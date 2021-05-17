@@ -4,7 +4,7 @@
 import pinyin from 'simple-pinyin';
 
 const str = '拼音';
-console.log(pinyin(str)); // pin'yins
+console.log(pinyin(str)); // pin'yin
 ```
 
 ## 注意
