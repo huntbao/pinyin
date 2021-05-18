@@ -1,3 +1,9 @@
+## 安装
+
+```js
+npm install 'easy-pinyin' --save
+```
+
 ## 使用
 
 ```js

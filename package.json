@@ -1,6 +1,6 @@
 {
   "name": "easy-pinyin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "汉字转拼音，浏览器端实现",
   "main": "pinyin.js",
   "repository": {
